@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="770e66d6-366e-4028-8d14-fe1bbe2db4ce" name="Default" comment="鹿班系统框架小乘境界">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-auth/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-auth/src/main/java/com/cloud/auth/LuBanAuthApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-auth/src/main/java/com/cloud/auth/config/AuthorizationServerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-auth/src/main/java/com/cloud/auth/config/ResourceServerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-auth/src/main/java/com/cloud/auth/config/WebSecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-auth/src/main/java/com/cloud/auth/feign/RemoteUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-auth/src/main/java/com/cloud/auth/feign/factory/RemoteLogFallbackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-auth/src/main/java/com/cloud/auth/feign/fallback/RemoteLogFallbackImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-auth/src/main/java/com/cloud/auth/handler/AuthenticationFailureEvenHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-auth/src/main/java/com/cloud/auth/handler/AuthenticationSuccessEventHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-auth/src/main/java/com/cloud/auth/handler/AuthenticationSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-auth/src/main/java/com/cloud/auth/handler/MmcAuthenticationFailureHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-auth/src/main/java/com/cloud/auth/security/ClientDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-auth/src/main/java/com/cloud/auth/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-auth/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/LuBanCloudBaseApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/controller/SysDeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/controller/SysDictController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/controller/SysDictItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/controller/SysJobController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/controller/SysLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/controller/SysMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/controller/SysOauthClientDetailsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/controller/SysRepeatCheckController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/controller/SysRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/controller/SysUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/mapper/SysDeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/mapper/SysDictItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/mapper/SysDictMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/mapper/SysJobMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/mapper/SysLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/mapper/SysMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/mapper/SysOauthClientDetailsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/mapper/SysRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/mapper/SysRoleMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/mapper/SysUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/mapper/SysUserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/mapper/SysUserSocialMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/mapper/sqlprovider/SqlProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/ISysDeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/ISysDictItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/ISysDictService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/ISysJobService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/ISysLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/ISysMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/ISysRoleMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/ISysRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/ISysUserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/ISysUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/SysOauthClientDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/impl/SysDeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/impl/SysDictItemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/impl/SysDictServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/impl/SysJobServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/impl/SysLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/impl/SysMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/impl/SysOauthClientDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/impl/SysRoleMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/impl/SysRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/impl/SysUserRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-base-server/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/exception/CustomOauthException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/exception/CustomOauthExceptionSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/exception/CustomWebResponseExceptionTranslator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/exception/ForbiddenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/exception/InvalidException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/exception/MethodNotAllowed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/exception/ServerErrorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/exception/SocialServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/exception/UnauthorizedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/exception/ValidateCodeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/handler/AuthExceptionEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/handler/CustomAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/resource/ResourceServerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/service/LoginType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/service/SecurityUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/token/CustomJwtAccessTokenConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/token/UserAuthenticationConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/util/LoginTypeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/util/SecurityUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/constant/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/constant/MenuConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/constant/SecurityConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/constant/ServiceNameConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/exception/BaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/exception/CheckedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/exception/ValidateCodeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/listener/MmcContextRefreshedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/mybatis/DataScope.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/mybatis/MyBatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/rsa/Coder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/rsa/RSA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/utils/BitConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/utils/BusinessUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/utils/CaptchaUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/utils/LocalMac.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/utils/MmcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/utils/NumConvertUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/utils/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/java/com/cloud/core/utils/RSAUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-log/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/LogAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/annotation/SysOperateLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/aspect/SysLogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/event/SysLogEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/feign/RemoteLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/feign/factory/RemoteLogFallbackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/feign/fallback/RemoteLogFallbackImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/listener/SysLogListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/util/LogUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/dto/DeptDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/dto/DictDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/dto/MenuDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/dto/RepeatCheckDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/dto/RoleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/dto/UserDetailsInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/entity/SysDept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/entity/SysDict.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/entity/SysDictItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/entity/SysJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/entity/SysLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/entity/SysMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/entity/SysOauthClientDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/entity/SysRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/entity/SysRoleDept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/entity/SysRoleMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/entity/SysUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/entity/SysUserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/entity/SysUserSocial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/vo/DeptTreeVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/vo/MenuMetaVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/vo/MenuTreeVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/vo/MenuVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/vo/SysDeptTreeVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/base/vo/SysUserImportVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/dashboard/entity/DashboardCurriculum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/dashboard/entity/DashboardCurriculumProgress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/dashboard/entity/DashboardCurriculumScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/dashboard/entity/DashboardCurriculumScoreDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/dashboard/entity/DashboardCurriculumSignal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/dashboard/entity/DashboardDept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/dashboard/entity/DashboardDeptCurriculum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/dashboard/entity/DashboardEquipmentInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/dashboard/entity/DashboardPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/dashboard/entity/DrillCurriculum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/dashboard/entity/DrillCurriculumProgress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/dashboard/entity/DrillCurriculumScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/dashboard/entity/DrillCurriculumScoreDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/dashboard/entity/DrillCurriculumSignal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/dashboard/entity/DrillEquipmentInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/file/dto/FileModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/luban/bo/ReqControlBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/luban/bo/ReqInterruptBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/luban/bo/ReqQueryBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/luban/dto/EditScoreDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/luban/entity/ActionReceiveLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/luban/entity/ActionSendLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/luban/entity/TriggerControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/luban/enums/ComputeTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/luban/enums/SignalTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/luban/vo/EquipmentIngVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/dto/ContestBaseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/dto/ContestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/dto/CurriculumDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/dto/DrillListDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/dto/DrillRecordDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/dto/SwingDetailDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/Contest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/ContestDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/ContestDetailEquipment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/ContestDetailMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/ContestDetailPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/ContestPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/ContestTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/Curriculum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/CurriculumEquipmentConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/CurriculumEquipmentInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/CurriculumEquipmentTrigger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/CurriculumScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/CurriculumScoreDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/Drill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/DrillEquipment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/DrillPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/Equipment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/entity/Place.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/vo/CurriculumEquipmentConfigVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/vo/CurriculumEquipmentTriggerVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/vo/CurriculumScoreDetailVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/vo/CurriculumScoreVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/vo/CurriculumVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/vo/DrillListVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/vo/DrillRecordVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-model/src/main/java/com/cloud/maintenance/vo/EquipmentRecordVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-redis/src/main/java/com/cloud/redis/config/FastJsonRedisSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-redis/src/main/java/com/cloud/redis/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-redis/src/main/java/com/cloud/redis/util/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-redis/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-redis/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-swagger/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-swagger/src/main/java/com/cloud/swagger/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/luban-common-swagger/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/MmcFileApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/controller/ExportExcelTemplateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/controller/FastDFSController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/controller/NginxFileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/controller/PersonnelImportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/handler/SysUserExcelHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/mapper/DeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/mapper/DictItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/mapper/JobMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/service/IDeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/service/IDictItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/service/IJobService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/service/IPersonnelImport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/service/impl/DeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/service/impl/DictItemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/service/impl/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/service/impl/JobServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/service/impl/PersonnelImportImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/utils/DictUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/utils/ExcelUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/utils/UserUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/resources/doc/PersonnelTemplate.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/resources/fastdfs-client.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-file-server/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-gateway/src/main/java/com/cloud/gateway/LuBanGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-gateway/src/main/java/com/cloud/gateway/config/CustomErrorWebFluxAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-gateway/src/main/java/com/cloud/gateway/config/RouterFunctionConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-gateway/src/main/java/com/cloud/gateway/config/SwaggerResourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-gateway/src/main/java/com/cloud/gateway/filter/AuthSignatureFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-gateway/src/main/java/com/cloud/gateway/filter/CustomGatewayFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-gateway/src/main/java/com/cloud/gateway/filter/GwCorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-gateway/src/main/java/com/cloud/gateway/filter/SwaggerHeaderFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-gateway/src/main/java/com/cloud/gateway/handler/FallbackController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-gateway/src/main/java/com/cloud/gateway/handler/HystrixFallbackHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-gateway/src/main/java/com/cloud/gateway/handler/JsonErrorWebExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-gateway/src/main/java/com/cloud/gateway/handler/SwaggerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-gateway/src/main/java/com/cloud/gateway/limit/RemoteAddrKeyResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lb-cloud-gateway/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luban.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/lb-common/target/" />
+    <ignored path="$PROJECT_DIR$/lb-auth/target/" />
+    <ignored path="$PROJECT_DIR$/lb-common/lb-common-auth/target/" />
+    <ignored path="$PROJECT_DIR$/lb-common/luban-common-core/target/" />
+    <ignored path="$PROJECT_DIR$/lb-common/luban-common-log/target/" />
+    <ignored path="$PROJECT_DIR$/lb-common/luban-common-model/target/" />
+    <ignored path="$PROJECT_DIR$/lb-common/luban-common-redis/target/" />
+    <ignored path="$PROJECT_DIR$/lb-common/luban-common-swagger/target/" />
+    <ignored path="$PROJECT_DIR$/lb-common/luban-common-auth/target/" />
+    <ignored path="$PROJECT_DIR$/lb-base-server/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud-base-server/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud-gateway/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud-file-server/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud-auth/target/" />
+    <ignored path="$PROJECT_DIR$/lbcloud--common/target/" />
+    <ignored path="$PROJECT_DIR$/lbcloud--common/luban-common-auth/target/" />
+    <ignored path="$PROJECT_DIR$/lbcloud--common/luban-common-redis/target/" />
+    <ignored path="$PROJECT_DIR$/lbcloud--common/luban-common-core/target/" />
+    <ignored path="$PROJECT_DIR$/lbcloud--common/luban-common-swagger/target/" />
+    <ignored path="$PROJECT_DIR$/lbcloud--common/luban-common-log/target/" />
+    <ignored path="$PROJECT_DIR$/lbcloud--common/luban-common-model/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud--common/luban-common-model/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud--common/luban-common-auth/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud--common/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud--common/luban-common-redis/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud--common/luban-common-log/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud--common/luban-common-core/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud--common/luban-common-swagger/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud-common/luban-common-core/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud-common/luban-common-redis/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud-common/luban-common-log/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud-common/luban-common-model/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud-common/target/" />
+    <ignored path="$PROJECT_DIR$/lb-cloud-common/luban-common-swagger/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-log/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SysLogListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/listener/SysLogListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SysLogAspect.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/aspect/SysLogAspect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="55" column="65" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SysOperateLog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/annotation/SysOperateLog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="30" selection-start-column="30" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>com.mmc</find>
+      <find>lb-base</find>
+      <find>import com.mmc.common.</find>
+      <find>import com.mmc.common</find>
+      <find>import com.mmc.</find>
+      <find>@Author yanlin</find>
+      <find>@Author</find>
+      <find>PreAuthorize</find>
+      <find>spring.s</find>
+      <find>@author yanlin</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>com.cloud</replace>
+      <replace>import com.cloud</replace>
+      <replace>import com.cloud.</replace>
+      <replace>@Author kevins</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/lb-common/luban-common-core/src/main/java/com/core/constant/Constant.java" />
+        <option value="$PROJECT_DIR$/lb-common/luban-common-core/src/main/java/com/cloud/core/constant/Constant.java" />
+        <option value="$PROJECT_DIR$/lb-common/lb-common-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-common/luban-common-core/src/main/java/com/cloud/core/utils/MmcUtil.java" />
+        <option value="$PROJECT_DIR$/lb-cloud-base-server/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-cloud-base-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/lb-auth/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/lb-cloud-file-server/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-common/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-common/luban-common-core/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-common/luban-common-swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-common/luban-common-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-common/luban-common-model/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-common/luban-common-log/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-common/luban-common-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-cloud-auth/src/main/java/com/cloud/auth/config/AuthorizationServerConfiguration.java" />
+        <option value="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/impl/SysDictServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/ISysMenuService.java" />
+        <option value="$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/resources/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/resources/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/resources/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/lb-cloud-common/luban-common-redis/src/main/resources/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/lb-cloud-common/luban-common-swagger/src/main/resources/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/lb-cloud-base-server/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/lb-cloud-file-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/lb-cloud-gateway/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/controller/SysOauthClientDetailsController.java" />
+        <option value="$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/mapper/SysUserMapper.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-cloud-common/luban-common-core/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-cloud-common/luban-common-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-cloud-common/luban-common-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-cloud-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-cloud-common/luban-common-log/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/aspect/SysLogAspect.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="luban" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="luban" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="205" />
+    <option name="y" value="283" />
+    <option name="width" value="1120" />
+    <option name="height" value="620" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="luban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luban" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luban" type="462c0819:PsiDirectoryNode" />
+              <item name="lb-cloud-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luban" type="462c0819:PsiDirectoryNode" />
+              <item name="lb-cloud-common" type="462c0819:PsiDirectoryNode" />
+              <item name="luban-common-log" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luban" type="462c0819:PsiDirectoryNode" />
+              <item name="lb-cloud-common" type="462c0819:PsiDirectoryNode" />
+              <item name="luban-common-log" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luban" type="462c0819:PsiDirectoryNode" />
+              <item name="lb-cloud-common" type="462c0819:PsiDirectoryNode" />
+              <item name="luban-common-log" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luban" type="462c0819:PsiDirectoryNode" />
+              <item name="lb-cloud-common" type="462c0819:PsiDirectoryNode" />
+              <item name="luban-common-log" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luban" type="462c0819:PsiDirectoryNode" />
+              <item name="lb-cloud-common" type="462c0819:PsiDirectoryNode" />
+              <item name="luban-common-log" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luban" type="462c0819:PsiDirectoryNode" />
+              <item name="lb-cloud-common" type="462c0819:PsiDirectoryNode" />
+              <item name="luban-common-log" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="SysOperateLog&#9;PSI&#9;JAVA://com.cloud.log.annotation.SysOperateLog&#10;ResourceServerConfiguration&#9;PSI&#9;JAVA://com.cloud.auth.resource.ResourceServerConfiguration&#10;CustomWebResponseExceptionTranslator&#9;PSI&#9;JAVA://com.cloud.auth.exception.CustomWebResponseExceptionTranslator" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.common.swagger.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\code\mmc\luban\lb-cloud-file-server\src\main\resources" />
+      <recent name="C:\code\mmc\luban\lb-cloud-file-server\src\main\java\com\cloud\file" />
+      <recent name="C:\code\mmc\luban\lb-cloud-gateway\src\main\resources" />
+      <recent name="C:\code\mmc\luban\lb-cloud-gateway\src\main\java\com\cloud\gateway" />
+      <recent name="C:\code\mmc\luban\lb-cloud-base-server\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="770e66d6-366e-4028-8d14-fe1bbe2db4ce" name="Default" comment="" />
+      <created>1578562206918</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578562206918</updated>
+      <workItem from="1578562209953" duration="11060000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11060000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.2808311" side_tool="true" weight="0.32909605" />
+      <window_info anchor="right" id="Maven Projects" weight="0.3163539" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info anchor="right" id="Database" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.5700141" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7191689" weight="0.32909605" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36260054" />
+      <window_info anchor="right" id="Bean Validation" weight="0.3297587" />
+      <window_info id="Web" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32909605" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="鹿班系统框架小乘境界" />
+    <option name="LAST_COMMIT_MESSAGE" value="鹿班系统框架小乘境界" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lb-common/luban-common-redis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-common/luban-common-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-common/luban-common-auth/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-common/luban-common-log/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-common/luban-common-model/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/exception/CustomWebResponseExceptionTranslator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-auth/src/main/java/com/cloud/auth/config/AuthorizationServerConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/impl/SysDictServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1985#1998#0" expanded="true" />
+            <element signature="e#2171#2180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/exception/CustomOauthException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/exception/CustomOauthExceptionSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/exception/InvalidException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/exception/MethodNotAllowed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/service/ISysMenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/feign/fallback/RemoteLogFallbackImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/java/com/cloud/auth/resource/ResourceServerConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-auth/src/main/resources/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-core/src/main/resources/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/LogAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/resources/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-redis/src/main/resources/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-swagger/src/main/resources/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-auth/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1005" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-base-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-base-server/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-226">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-file-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-file-server/src/main/resources/fastdfs-client.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-file-server/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1347" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-gateway/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="102" column="10" lean-forward="true" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-auth/src/main/java/com/cloud/auth/handler/AuthenticationSuccessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/mapper/SysJobMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/mapper/DeptMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/mapper/JobMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-file-server/src/main/java/com/cloud/file/mapper/DictItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/mapper/SysUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/controller/SysOauthClientDetailsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-base-server/src/main/java/com/cloud/base/controller/SysLogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1380">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-base-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1482">
+          <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-auth/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-model/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-gateway/src/main/java/com/cloud/gateway/config/SwaggerResourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-gateway/src/main/java/com/cloud/gateway/handler/SwaggerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-redis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-log/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/listener/SysLogListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/annotation/SysOperateLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lb-cloud-common/luban-common-log/src/main/java/com/cloud/log/aspect/SysLogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="55" column="65" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>luban-common-model</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,3 @@
+com\cloud\redis\config\FastJsonRedisSerializer.class
+com\cloud\redis\util\RedisUtil.class
+com\cloud\redis\config\RedisConfig.class

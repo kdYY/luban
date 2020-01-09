@@ -1,0 +1,12 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: lb-cloud-base-server
+  cloud:
+    nacos:
+      discovery:
+#        server-addr: 112.126.99.144:8848
+        server-addr: 127.0.0.1:8848
+  profiles:
+    active: dev

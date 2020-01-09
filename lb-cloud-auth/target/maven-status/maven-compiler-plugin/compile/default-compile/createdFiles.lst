@@ -1,0 +1,13 @@
+com\cloud\auth\config\AuthorizationServerConfiguration.class
+com\cloud\auth\feign\RemoteUserService.class
+com\cloud\auth\security\ClientDetailsService.class
+com\cloud\auth\handler\MmcAuthenticationFailureHandler.class
+com\cloud\auth\config\WebSecurityConfiguration.class
+com\cloud\auth\handler\AuthenticationSuccessEventHandler.class
+com\cloud\auth\handler\AuthenticationSuccessHandler.class
+com\cloud\auth\feign\factory\RemoteLogFallbackFactory.class
+com\cloud\auth\security\UserDetailsServiceImpl.class
+com\cloud\auth\handler\AuthenticationFailureEvenHandler.class
+com\cloud\auth\config\ResourceServerConfiguration.class
+com\cloud\auth\feign\fallback\RemoteLogFallbackImpl.class
+com\cloud\auth\LuBanAuthApplication.class

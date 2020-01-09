@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.cloud.core.mybatis.MyBatisPlusConfig
+org.springframework.context.ApplicationListener=\
+    com.cloud.core.listener.MmcContextRefreshedEvent

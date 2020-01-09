@@ -1,0 +1,66 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: lb-cloud-auth
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+#      config:
+#        server-addr: 127.0.0.1:8848
+#        namespace: 9b3a8ff9-4abf-4045-af45-128aaa775e4f
+#        file-extension: yml
+
+  redis:
+    database: 1
+    host: 112.126.99.144
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: 30000ms
+        min-idle: 1
+    password: possible
+    port: 6379
+    timeout: 6000ms
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      connection-test-query: SELECT 1
+      max-lifetime: 30000
+      maximum-pool-size: 10
+      minimum-idle: 3
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://112.126.99.144:3306/mmc?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+  main:
+    allow-bean-definition-overriding: true
+
+ribbon:
+  ReadTimeout: 6000
+  ConnectTimeout: 6000
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+
+#请求和响应GZIP压缩支持
+feign:
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
+  hystrix:
+    enabled: true
+
+#logging:
+#  level:
+#    org.springframework: DEBUG

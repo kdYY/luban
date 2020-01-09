@@ -1,0 +1,9 @@
+com\cloud\log\util\LogUtil.class
+com\cloud\log\feign\factory\RemoteLogFallbackFactory.class
+com\cloud\log\LogAutoConfiguration.class
+com\cloud\log\feign\RemoteLogService.class
+com\cloud\log\feign\fallback\RemoteLogFallbackImpl.class
+com\cloud\log\annotation\SysOperateLog.class
+com\cloud\log\aspect\SysLogAspect.class
+com\cloud\log\event\SysLogEvent.class
+com\cloud\log\listener\SysLogListener.class
