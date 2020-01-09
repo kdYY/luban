@@ -1,0 +1,36 @@
+mybatis-plus:
+  #  mapper-locations: classpath:mapper/*.xml
+  typeAliasesPackage: com.cloud.base.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+server:
+  http2:
+    enabled: true
+  undertow:
+    buffer-size: 2048
+    direct-buffers: true
+    io-threads: 4
+    worker-threads: 20
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      connection-test-query: SELECT 1
+      max-lifetime: 30000
+      maximum-pool-size: 10
+      minimum-idle: 10
+      connection-timeout: 30000
+      idle-timeout: 60000
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://112.126.99.144:3306/mmc?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000

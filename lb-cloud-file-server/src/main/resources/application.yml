@@ -1,0 +1,49 @@
+server:
+  port: 8020
+  http2:
+    enabled: true
+    undertow:
+      buffer-size: 2048
+      direct-buffers: true
+      io-threads: 4
+      worker-threads: 20
+spring:
+  application:
+    name: mmc-file-server
+  cloud:
+    nacos:
+      discovery:
+        #        server-addr: 112.126.99.144:8848
+        server-addr: 127.0.0.1:8848
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      connection-test-query: SELECT 1
+      max-lifetime: 30000
+      maximum-pool-size: 10
+      minimum-idle: 3
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://112.126.99.144:3306/mmc?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+# 安全相关配置
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: "123"
+      #user-info-uri:
+      #prefer-token-info: false
+      id: api
+      service-id: lb-cloud-file-server
+mybatis-plus:
+  #  mapper-locations: classpath:mapper/*.xml
+  #  typeAliasesPackage: com.mmc.file.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+file:
+  path: /home/ftpadmin/picture/images/
+  returnPath: 112.126.99.144:80/images/

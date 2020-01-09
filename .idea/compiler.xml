@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lb-cloud-auth" />
+        <module name="lb-cloud-base-server" />
+        <module name="lb-cloud-file-server" />
+        <module name="lb-cloud-gateway" />
+        <module name="luban-common-auth" />
+        <module name="luban-common-core" />
+        <module name="luban-common-log" />
+        <module name="luban-common-model" />
+        <module name="luban-common-redis" />
+        <module name="luban-common-swagger" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

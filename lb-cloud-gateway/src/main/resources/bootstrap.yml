@@ -1,0 +1,111 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: lb-cloud-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+#        server-addr: 112.126.99.144:8848
+#      config:
+#        server-addr: 127.0.0.1:8848
+#        namespace: 29ee0c2e-d7f4-4fb4-b14c-03043c946b21
+#        file-extension: yml
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        #        基础服务
+        - id: lb-cloud-base-server
+          # lb代表从注册中心获取服务，且已负载均衡方式转发
+          uri: lb://lb-cloud-base-server
+          predicates: # 路由条件，Predicate 接受一个输入参数，返回一个布尔值结果
+            - Path=/sys/**
+          filters:
+            - SwaggerHeaderFilter
+            - StripPrefix=1
+            # 降级配置
+            - name: Hystrix
+              args:
+                name: fallback
+                fallbackUri: forward:/fallback
+        #        授权服务
+        - id: mmc-auth
+          uri: lb://lb-cloud-auth
+          predicates:
+            - Path=/auth/**
+          filters:
+#            - ImageCodeFilter
+            - RemoveRequestHeader=Origin
+            - StripPrefix=1
+            # 降级配置
+            - name: Hystrix
+              args:
+                name: fallbackcmd
+                fallbackUri: forward:/fallback
+        #        文件服务
+        - id: lb-cloud-file-server
+          uri: lb://lb-cloud-file-server
+          predicates:
+            - Path=/file/**
+          filters:
+            - SwaggerHeaderFilter
+            - StripPrefix=1
+            # 降级配置
+            - name: Hystrix
+              args:
+                name: fallbackcmd
+                fallbackUri: forward:/fallback
+
+        #      #clientA
+#        - id: client
+#          uri: lb://aa
+#          predicates:
+#            - Path=/aa/**
+#          filters:
+#            - SwaggerHeaderFilter
+#            - StripPrefix=1
+#            #filter名称必须是RequestRateLimiter
+#            - name: RequestRateLimiter
+#              args:
+#                #使用SpEL按名称引用bean
+#                key-resolver: "#{@remoteAddrKeyResolver}"
+#                #允许用户每秒处理多少个请求
+#                redis-rate-limiter.replenishRate: 1
+#                #令牌桶的容量，允许在一秒钟内完成的最大请求数
+#                redis-rate-limiter.burstCapacity: 5
+  redis:
+    database: 1
+    host: 127.0.0.1
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: 30000ms
+        min-idle: 1
+    password: possible
+    port: 6379
+    timeout: 6000ms
+# logging:
+#   level:
+#     org.springframework.cloud.gateway: debug
+
+# hystrix 信号量隔离，5秒后自动超时
+hystrix:
+  command:
+    default:  #default全局有效，feign id指定应用有效
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          strategy: SEMAPHORE
+          thread:
+            timeoutInMilliseconds: 5000 #断路器超时时间，默认1000ms
