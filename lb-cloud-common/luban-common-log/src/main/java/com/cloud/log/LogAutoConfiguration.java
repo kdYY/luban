@@ -20,7 +20,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @EnableAsync
 @Configuration
 @ConditionalOnWebApplication
-@EnableFeignClients({"com.mmc.common.log.feign"})
+@EnableFeignClients({"com.cloud.log.feign"})
 public class LogAutoConfiguration {
 
     @Bean

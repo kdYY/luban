@@ -41,10 +41,10 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Mmc API")
+                .title("鹿班 API")
                 .description("auth")
                 .termsOfServiceUrl("")
-                .contact(new Contact("Prex演示站点", "http://springcloud.cn", ""))
+                .contact(new Contact("演示站点", "http://springcloud.cn", ""))
                 .version("2.0")
                 .build();
     }
