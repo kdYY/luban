@@ -33,7 +33,7 @@ spring:
       maximum-pool-size: 10
       minimum-idle: 3
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://112.126.99.144:3306/mmc?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://127.0.0.1:3306/luban?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
     username: root
     password: 123456
   main:
