@@ -18,7 +18,7 @@ import javax.servlet.MultipartConfigElement;
  **/
 @SpringBootApplication
 @EnableDiscoveryClient
-@MapperScan("com.mmc.file.mapper")
+@MapperScan("com.cloud.file.mapper")
 public class MmcFileApplication {
     public static void main(String[] args) {
         SpringApplication.run(MmcFileApplication.class, args);

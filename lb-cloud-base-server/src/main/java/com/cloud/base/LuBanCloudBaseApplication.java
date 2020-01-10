@@ -13,7 +13,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @Version V1.0
  **/
 @EnableDiscoveryClient
-@MapperScan("com.mmc.base.mapper")
+@MapperScan("com.cloud.base.mapper")
 @SpringBootApplication
 public class LuBanCloudBaseApplication {
     public static void main(String[] args) {
