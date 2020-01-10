@@ -34,6 +34,7 @@
         <module>lb-cloud-base-server</module>
         <module>lb-cloud-gateway</module>
         <module>lb-cloud-file-server</module>
+        <module>lb-cloud-packetId-service</module>
     </modules>
 
 

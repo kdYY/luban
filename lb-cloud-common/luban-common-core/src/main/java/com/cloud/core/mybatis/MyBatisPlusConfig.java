@@ -21,7 +21,7 @@ import java.util.List;
 @EnableTransactionManagement
 //@ConditionalOnBean(DataSource.class)
 @Configuration
-@MapperScan("com.cloud.**.mapper")
+@MapperScan("com.cloud.**.**.mapper")
 public class MyBatisPlusConfig {
     /**
      * 分页插件

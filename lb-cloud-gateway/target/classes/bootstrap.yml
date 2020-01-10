@@ -38,7 +38,7 @@ spring:
                 name: fallback
                 fallbackUri: forward:/fallback
         #        授权服务
-        - id: mmc-auth
+        - id: lb-cloud-auth
           uri: lb://lb-cloud-auth
           predicates:
             - Path=/auth/**
