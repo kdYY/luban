@@ -20,7 +20,6 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 /**
  * @Classname ResourceServerConfiguration
  * @Description oauth2资源服务器
- * @Author Created by Lihaodong (alias:小东啊) im.lihaodong@gmail.com
  * @Date 2019-08-07 10:11
  * @Version 1.0
  */
